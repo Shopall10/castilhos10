@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castilhos Clothes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #FF6347;
+            color: white;
+            text-align: left; /* Alinhado à esquerda */
+            padding: 20px;
+            position: relative; /* Para posicionar a logo */
+        }
+
+        header img {
+            width: 80px;
+            border-radius: 50%; /* Borda redonda */
+            position: absolute; /* Para posicionar a logo */
+            top: 20px; /* Alinhamento vertical */
+            left: 20px; /* Alinhamento horizontal */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-left: 80px; /* Margem para evitar sobreposição com a logo */
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product p {
+            color: #777;
+            margin: 5px 0;
+        }
+
+        .price {
+            font-weight: bold; /* Para destacar o preço */
+            color: #FF6347;
+        }
+
+        .contact {
+            margin: 15px 0;
+            color: #FF6347;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+        }
+
+        /* Modal (janela pop-up para ampliar imagem) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            display: block;
+            margin: auto;
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Ajustes de responsividade para 2 colunas em todas as telas */
+        @media (max-width: 768px) {
+            .products {
+                justify-content: center;
+            }
+
+            .product {
+                width: 45%; /* Dois produtos por linha */
+                margin: 5px;
+            }
+        }
+
+        /* Para telas bem pequenas (como < 320px), uma coluna */
+        @media (max-width: 320px) {
+            .product {
+                width: 100%; /* Um produto por linha */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="DALL·E 2024-09-21 17.40.30 - A completely new vibrant logo for 'Castilhos Clothes' using a combination of light pink and bright orange. The design should be extremely simple, mini.webp" alt="Logo Castilhos Clothes">
+        <h1>Castilhos Clothes</h1>
+    </header>
+
+    <section class="products">
+        <!-- Loop para gerar 100 produtos -->
+        <!-- Produtos 1 a 155 -->
+        <script>
+            let productsContainer = document.querySelector('.products');
+            for (let i = 1; i <= 166; i++) {
+                // Substitua "MZN XXX" pelos preços reais de cada produto
+                let price = 'XXX'; // Coloque o preço manualmente aqui para cada produto
+                if (i === 1) price = ' 800  2pcs';
+                if (i === 2) price = '850';
+                if (i === 3) price = '650';
+                if (i === 4) price = '850';
+                if (i === 5) price = '650';
+                if (i === 6) price = '1600';
+                if (i === 7) price = '1400';
+                if (i === 8) price = '850';
+                if (i === 9) price = '800';
+                if (i === 10) price = '800';
+                if (i === 11) price = '750';
+                if (i === 12) price = '450';
+                if (i === 13) price = '700';
+                if (i === 14) price = '750';
+                if (i === 15) price = '750';
+                if (i === 16) price = '450';
+                if (i === 17) price = '800';
+                if (i === 18) price = '700';
+                if (i === 19) price = '700';
+                if (i === 20) price = '600';
+               
+if (i === 21) price = '500';
+if (i === 22) price = '450';
+if (i === 23) price = '450';
+if (i === 24) price = '800 4pcs';
+if (i === 25) price = '700';
+if (i === 26) price = '750';
+if (i === 27) price = '700';
+if (i === 28) price = '800';
+if (i === 29) price = '1200';
+if (i === 30) price = '1600';
+if (i === 31) price = '1300';
+if (i === 32) price = '1400';
+if (i === 33) price = '350';
+if (i === 34) price = '1800';
+if (i === 35) price = '350';
+if (i === 36) price = '450';
+if (i === 37) price = '650';
+if (i === 38) price = '950';
+if (i === 39) price = '750';
+if (i === 40) price = '850';
+if (i === 41) price = '700';
+if (i === 42) price = '700';
+if (i === 43) price = '800';
+if (i === 44) price = '800';
+if (i === 45) price = '800';
+if (i === 46) price = '800';
+if (i === 47) price = '750';
+if (i === 48) price = '750';
+if (i === 49) price = '600';
+if (i === 50) price = '650';
+if (i === 51) price = '750';
+if (i === 52) price = '700';
+if (i === 53) price = '850';
+if (i === 54) price = '650';
+if (i === 55) price = '800';
+if (i === 56) price = '1000';
+if (i === 57) price = '700';
+if (i === 58) price = '550';
+if (i === 59) price = '700';
+if (i === 60) price = '700';
+if (i === 61) price = '750';
+if (i === 62) price = '350';
+if (i === 63) price = '650';
+if (i === 64) price = '650';
+if (i === 65) price = '800';
+if (i === 66) price = '1200';
+if (i === 67) price = '700';
+if (i === 68) price = '1200';
+if (i === 69) price = '850';
+if (i === 70) price = '950';
+if (i === 71) price = '850';
+if (i === 72) price = '650';
+if (i === 73) price = '700';
+if (i === 74) price = '700';
+if (i === 75) price = '900';
+if (i === 76) price = '900';
+if (i === 77) price = '750';
+if (i === 78) price = '650';
+if (i === 79) price = '1100';
+if (i === 80) price = '650';
+if (i === 81) price = '1200';
+if (i === 82) price = '1600';
+if (i === 83) price = '1200';
+if (i === 84) price = '1200';
+if (i === 85) price = '1200';
+if (i === 86) price = '600';
+if (i === 87) price = '1200';
+if (i === 88) price = '1200';
+if (i === 89) price = '650';
+if (i === 90) price = '1100';
+if (i === 91) price = '850';
+if (i === 92) price = '750';
+if (i === 93) price = '750';
+if (i === 94) price = '1200';
+if (i === 95) price = '1100';
+if (i === 96) price = '1100';
+if (i === 97) price = '1250';
+if (i === 98) price = '1250';
+if (i === 99) price = '970';
+if (i === 100) price = '750';
+if (i === 101) price = '600';
+if (i === 102) price = '650';
+if (i === 103) price = '600';
+if (i === 104) price = '800';
+if (i === 105) price = '850';
+if (i === 106) price = '750';
+if (i === 107) price = '950';
+if (i === 108) price = '950';
+if (i === 109) price = '850';
+if (i === 110) price = '850';
+if (i === 111) price = '650';
+if (i === 112) price = '650';
+if (i === 113) price = '650';
+if (i === 114) price = '750';
+if (i === 115) price = '750';
+if (i === 116) price = '750';
+if (i === 117) price = '750';
+if (i === 118) price = '600';
+if (i === 119) price = '750';
+if (i === 120) price = '550';
+if (i === 121) price = '900';
+if (i === 122) price = '550';
+if (i === 123) price = '850';
+if (i === 124) price = '650';
+if (i === 125) price = '1200';
+if (i === 126) price = '1200';
+if (i === 127) price = '950';
+if (i === 128) price = '950';
+if (i === 129) price = '750';
+if (i === 130) price = '850';
+if (i === 131) price = '650';
+if (i === 132) price = '680';
+if (i === 133) price = '780';
+if (i === 134) price = '780';
+if (i === 135) price = '550';
+if (i === 136) price = '550';
+if (i === 137) price = '650';
+if (i === 138) price = '600';
+if (i === 139) price = '600';
+if (i === 140) price = '750';
+if (i === 141) price = '900';
+if (i === 142) price = '750';
+if (i === 143) price = '550';
+if (i === 144) price = '600';
+if (i === 145) price = '780';
+if (i === 146) price = '600';
+if (i === 147) price = '700';
+if (i === 148) price = '700';
+if (i === 149) price = '600';
+if (i === 150) price = '950';
+if (i === 151) price = '1200';
+if (i === 152) price = '1200';
+if (i === 153) price = '950';
+if (i === 154) price = '650';
+if (i === 155) price = '1200';
+if (i === 156) price = '880';
+if (i === 157) price = '860';
+if (i === 158) price = '860';
+if (i === 159) price = '820';
+if (i === 160) price = '685';
+if (i === 161) price = '760';
+if (i === 162) price = '815';
+if (i === 163) price = '760';
+if (i === 164) price = '700';
+if (i === 165) price = '950';
+if (i === 166) price = '780';
+if (i === 167) price = '';
+if (i === 168) price = '';
+if (i === 169) price = '';
+if (i === 170) price = '';
+if (i === 171) price = '';
+if (i === 172) price = '';
+if (i === 173) price = '';
+if (i === 174) price = '';
+if (i === 175) price = '';
+if (i === 176) price = '';
+if (i === 177) price = '';
+if (i === 178) price = '';
+if (i === 179) price = '';
+if (i === 180) price = '';
+if (i === 181) price = '';
+if (i === 182) price = '';
+if (i === 183) price = '';
+if (i === 184) price = '';
+if (i === 185) price = '';
+if (i === 186) price = '';
+if (i === 187) price = '';
+if (i === 188) price = '';
+if (i === 189) price = '';
+if (i === 190) price = '';
+if (i === 191) price = '';
+if (i === 192) price = '';
+if (i === 193) price = '';
+if (i === 194) price = '';
+if (i === 195) price = '';
+if (i === 196) price = '';
+if (i === 197) price = '';
+if (i === 198) price = '';
+if (i === 199) price = '';
+if (i === 200) price = '';
+                // Continue inserindo os preços específicos para cada produto
+
+                productsContainer.innerHTML += `
+                <div class="product">
+                    <img src="${i}.jpg" alt="Produto ${i}" class="clickable-image">
+                    <h3>Produto ${i}</h3>
+                    <p class="price">Preço: MZN ${price}</p>
+                    <p class="contact">Contato: (+258) 879992762 </p>
+                </div>`;
+            }
+        </script>
+    </section>
+
+    <!-- Modal para ampliar imagem -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Castilhos Clothes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Obtenha o modal e a imagem
+        var modal = document.getElementById('modal');
+        var modalImg = document.getElementById('modal-img');
+        var close = document.getElementsByClassName('close')[0];
+
+        // Adiciona evento para cada imagem clicável
+        document.addEventListener("click", function (event) {
+            if (event.target.classList.contains('clickable-image')) {
+                modal.style.display = "block";
+                modalImg.src = event.target.src;
+            }
+        });
+
+        // Fechar o modal quando clicar no "X"
+        close.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Fechar o modal quando clicar fora da imagem
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
